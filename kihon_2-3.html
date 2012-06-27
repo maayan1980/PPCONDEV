@@ -1,0 +1,27 @@
+<script type = "text/javascript">
+// 関数はfunctionを使って定義
+function testFunc(a,b,c){
+alert(a + b + c);
+}
+
+// オブジェクトはnew演算子を使って作成
+var now = new Date();
+// .(ドット／ピリオド）を使ってメソッドを呼び出す
+var year = now.getYear();
+
+// 文字列もオブジェクト
+var str = "こんにちは";
+// .(ドット／ピリオド）を使ってプロパティを参照する
+var len = str.length;
+
+// screenオブジェクトから画面のサイズを取得できる
+var width = screen.width;
+
+var years = testFunc(year,year,year);
+alert(years);
+var strs = testFunc(str,str,str);
+var lens = testFunc(len,len,len);
+var widths = testFunc(width,width,width);
+
+
+</script>
