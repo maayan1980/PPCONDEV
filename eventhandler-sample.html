@@ -1,0 +1,29 @@
+<html>
+<head id ="header">
+<meta name="viewport"
+	  content="width=device-width,initial-scale=1,user-scalable=yes" />
+<title>イベントハンドラテスト</title>
+<script><!--
+function $(id) {return document.getElementById(id); }
+
+// ボタンのclickイベントのイベントハンドラを2回指定
+function init(){
+	$('button').onclick = function(){
+		$('output1').innerHTML ="１つめのイベントハンドラによる出力";
+	};
+	
+	$('button').onclick = function(){
+		$('output2').innerHTML ="２つめのイベントハンドラによる出力";
+	};
+}
+
+// -->
+</script>
+</head>
+<body onload="init();">
+<h1>イベントハンドラテスト</h1>
+<div id="output1"></div>
+<div id="output2"></div>
+<button id="button">ボタン</button>
+</body>
+</html>

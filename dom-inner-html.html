@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang ="ja">
+<head>
+<meta charset="UTF-8">
+<title>innerHTMLの書き換え</title>
+</head>
+<body>
+<div id="target"></div>
+<button onclick="setContent();">innerHTMLの書き換え</button>
+<script><!--
+function $(id) { return document.getElementById(id); }
+
+function setContent(){
+	$("target").innerHTML ="Hello!";
+}
+// -->
+</script>
+</body>
+</html>
